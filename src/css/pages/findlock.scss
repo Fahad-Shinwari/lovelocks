@@ -1,0 +1,65 @@
+.find-lock {
+  background: url("../../images/lock/lock.svg");
+  background-repeat: repeat;
+  background-size: 100%;
+  background-position: center;
+  .row {
+    .col:nth-child(odd) img {
+      width: 4rem;
+      transform: rotate(30deg);
+    }
+    .col:nth-child(even) img {
+      width: 7rem;
+      transform: rotate(-30deg);
+    }
+    .border {
+      border: 3px solid $white !important;
+      padding: 2rem;
+    }
+  }
+
+  /* relevant styles */
+  .img__wrap {
+    position: relative;
+    height: 200px;
+    width: 257px;
+  }
+
+  .img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+
+  .img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+  .row-two {
+    .col:nth-child(odd) img {
+      width: 7rem;
+      transform: rotate(40deg);
+    }
+    .col:nth-child(even) img {
+      width: 4rem;
+      transform: rotate(10deg);
+    }
+  }
+  .locateLock {
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    width: 20%;
+    height: 3.5rem;
+    background: linear-gradient(to left, #d616e0, #7204f9);
+  }
+}

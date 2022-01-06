@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="562.036" height="396" viewBox="0 0 562.036 396">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="2.401" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#333"/>
+      <stop offset="1" stop-color="#e0f"/>
+    </linearGradient>
+  </defs>
+  <rect id="purple_text_box" data-name="purple text box" width="562.036" height="396" rx="22" fill="url(#linear-gradient)"/>
+</svg>

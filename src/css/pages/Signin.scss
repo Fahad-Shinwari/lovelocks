@@ -1,0 +1,70 @@
+.signin {
+  input,
+  textarea {
+    display: block;
+    background-color: #333333;
+    color: #ddd9d9;
+    margin-top: 2rem;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    @include breakpoint-down(small) {
+      width: 90%;
+    }
+  }
+  input {
+    height: 2.5rem;
+  }
+  .image-uploading {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    img {
+      width: 7rem;
+      border-radius: 5px;
+    }
+    .choose {
+      button {
+        background-color: transparent;
+        color: $black;
+        border: 2px solid $black;
+        padding: 0.1rem 1.5rem;
+      }
+      input {
+        display: block;
+        margin-top: 0.2rem !important;
+        outline: none;
+        border: none;
+        height: 1rem !important;
+        color: $black;
+      }
+      input[type="radio"] {
+        accent-color: #232323;
+        width: 1rem;
+      }
+      .d-flex {
+        gap: 0.5rem;
+      }
+    }
+  }
+  .locks {
+    img {
+      width: 6rem;
+    }
+    .btns button {
+      height: 3rem;
+      width: 40%;
+    }
+    .mb-6 {
+      margin: 2rem 0 1rem 0;
+    }
+    .btns-single {
+      margin-top: 4rem;
+      button {
+        width: 35%;
+      }
+    }
+  }
+}

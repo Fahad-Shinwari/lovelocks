@@ -1,0 +1,111 @@
+.about {
+  .carousel {
+    img {
+      height: auto;
+      min-width: 100%;
+    }
+    h1 {
+      color: $white;
+    }
+  }
+  p {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+    color: $black;
+  }
+  .flow {
+    background: url("../../images/about/flow-lines.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding-top: 32rem;
+    position: relative;
+    .left-col {
+      position: relative;
+      top: -18.5rem;
+      z-index: 11;
+      .locks {
+        width: 5rem;
+      }
+      .p-top {
+        margin-top: 12rem;
+      }
+      .text-on-img {
+        position: absolute;
+        top: 12%;
+        color: white;
+        padding: 0 1rem;
+        text-align: left;
+      }
+      .text-on-img-two {
+        position: absolute;
+        top: 48%;
+        color: white;
+        padding: 0 1rem;
+        text-align: left;
+      }
+      .text-on-img-three {
+        position: absolute;
+        top: 85.5%;
+        color: white;
+        padding: 0 1rem;
+        text-align: left;
+      }
+    }
+    .col-bg {
+      position: absolute;
+      left: 51%;
+      top: -1%;
+      .locks {
+        width: 5rem;
+      }
+      .p-top {
+        margin-top: 12rem;
+      }
+      .text-on-img {
+        position: absolute;
+        top: 12%;
+        color: white;
+        padding: 0 1rem;
+        text-align: left;
+      }
+      .text-on-img-two {
+        position: absolute;
+        top: 48%;
+        color: white;
+        padding: 0 1rem;
+        text-align: left;
+      }
+      .text-on-img-three {
+        position: absolute;
+        top: 85.5%;
+        color: white;
+        padding: 0 1rem;
+        text-align: left;
+      }
+    }
+  }
+  .hide-for-desktop {
+    .text-on-img {
+      position: absolute;
+      top: 46%;
+      padding: 0 1rem 0 0.3rem;
+      color: white;
+    }
+  }
+  .team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+      width: 30%;
+      padding: 1rem;
+      @include breakpoint-down(small) {
+        width: auto;
+      }
+    }
+  }
+}

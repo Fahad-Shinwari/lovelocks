@@ -1,0 +1,189 @@
+.banner {
+  background: url("../../images/bridge.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+
+  @include breakpoint-down(medium) {
+    background-size: auto;
+  }
+
+  .text-banner {
+    margin-top: 3rem;
+  }
+  .cloud-img {
+    img {
+      transition: transform 0.7s ease-in-out;
+    }
+    img:hover {
+      transform: rotate(30deg);
+    }
+  }
+  .bg-btn {
+    background: url("../../images/landing/gray-btn-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20%;
+    height: 3.5rem;
+    @include breakpoint-down(medium) {
+      background: none;
+      width: auto;
+    }
+    a {
+      margin: auto;
+    }
+    p {
+      margin: auto;
+      @include breakpoint-down(medium) {
+        margin: auto 1em;
+      }
+    }
+    button {
+      height: 2.5em;
+      margin: auto;
+    }
+  }
+  .gradient-btn {
+    background: linear-gradient(to left, #d616e0, #7204f9);
+    width: 19%;
+    height: 3rem;
+    a {
+      color: $white;
+    }
+    @include breakpoint-down(small) {
+      display: none;
+    }
+  }
+}
+// Virtual Love Bg
+.virtual {
+  background: url("../../images/landing/background.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  @include breakpoint-down(medium) {
+    background-size: auto;
+  }
+
+  .virtual-text {
+    padding: 7rem 0 3rem 0;
+    text-align: center;
+    margin: auto;
+
+    p {
+      margin-bottom: 4rem;
+    }
+  }
+}
+.locks-div {
+  gap: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .each-slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  .images-wrap {
+    width: 10rem !important;
+    transform: none !important;
+  }
+  // img {
+  //   width: 6rem;
+  //   height: 7rem;
+  //   @include breakpoint-down(medium) {
+  //     width: 17%;
+  //     height: 24%;
+  //   }
+  // }
+}
+
+// Learn More
+.learn {
+  margin: 3rem auto;
+  .bg-grey {
+    background-color: #bcc3d3;
+    padding: 10rem 1rem;
+    border-radius: 50px;
+    .locks-div {
+      img {
+        width: 16%;
+        height: 4rem;
+      }
+    }
+  }
+  .learn-text {
+    padding: 1rem 4rem;
+    img {
+      width: 4rem;
+      margin: 0 28% 2rem 0;
+    }
+    button {
+      width: 45%;
+      padding: 0.8rem;
+    }
+  }
+}
+
+// Community
+.community {
+  background: url("../../images/landing/community-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $white;
+  padding: 3rem 0;
+
+  h2 {
+    letter-spacing: 6px;
+  }
+  .discord-icons {
+    img {
+      width: 2rem;
+      margin: auto 1rem 0 1rem;
+    }
+    .discord-btn {
+      background-color: $white;
+      color: $black;
+      width: auto;
+      margin: 3rem 0 0 0.7rem;
+    }
+  }
+  @include breakpoint-down(small) {
+    img {
+      width: 10rem;
+    }
+  }
+}
+// News letter
+.news {
+  background: url("../../images/landing/news-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 7rem 0;
+  input {
+    width: 30%;
+    border: none;
+    height: 3rem;
+    background: transparent;
+    border-bottom: 2px solid #9c95a4;
+  }
+  button {
+    height: 3rem;
+    width: 10%;
+    @include breakpoint-down(medium) {
+      width: auto;
+      height: 2rem;
+      margin-top: auto;
+    }
+  }
+}
+// Footer
+.footer {
+  display: flex;
+  justify-content: center;
+  img {
+    margin-right: 1em;
+  }
+}

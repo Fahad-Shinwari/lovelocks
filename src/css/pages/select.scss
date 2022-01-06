@@ -1,0 +1,42 @@
+.lock {
+  background: url("../../images/bridge.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  .select-lock {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    backdrop-filter: blur(4px);
+
+    .box {
+      width: 33%;
+      padding: 1rem;
+
+      @include breakpoint-down(small) {
+        width: auto;
+      }
+
+      img {
+        width: 7rem;
+        margin: 1rem auto;
+        display: block;
+      }
+      button {
+        width: 70%;
+        display: block;
+        margin: 1rem auto;
+      }
+    }
+    .box:hover {
+      background-color: $buttonColor;
+      color: $white;
+      border-radius: 10px;
+      button {
+        border: 2px solid $black;
+        box-shadow: 2px;
+      }
+    }
+  }
+}
